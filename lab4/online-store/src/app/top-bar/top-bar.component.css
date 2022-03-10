@@ -1,0 +1,36 @@
+nav {
+    display: flex;
+    min-height: 90px;
+    width: 100%;
+    background-color: rgb(20, 25, 32);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;   
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin-left: 25px;
+}
+
+.header__checkout {
+    display: flex;
+    margin-right: 25px;
+}
+
+.header__checkout button {
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 10px;
+
+}

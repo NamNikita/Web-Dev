@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="product">
+        <div class="product_title pad">
+            <h3>
+                <a [title]="product.name + ' details'">
+                    {{ product.name }}
+                </a>
+            </h3>
+        </div>
+        <div class="product_image pad">
+            <a *ngIf="product.image" href="{{ product.link }}">
+                <img src="{{ product.image }}">
+            </a>
+        </div>
+        <div class="product_desc pad">
+            <p *ngIf="product.description">
+                <strong>Description:</strong> {{ product.description }}
+            </p>
+        </div>
+        <div class="product_ratin pad">
+            <p *ngIf="product.rating">
+                <strong>Rating:</strong> {{ product.rating }}
+            </p>
+        </div>
+        <div class="product_price pad">
+            <p *ngIf="product.price">
+                <strong>Price:</strong> US ${{ product.price }}
+            </p>
+        </div>
+        <div class="product_share pad">
+            <a href="https://t.me/share/url?url= {{ product.link }}&text=Check this!">
+                <button>Share</button>
+            </a>
+        </div>
+    </div>
+</div>

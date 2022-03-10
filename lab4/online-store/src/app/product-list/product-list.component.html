@@ -1,0 +1,15 @@
+<div class="product_list">
+    <div class="product_title">
+        <h2>Products</h2>
+    </div>
+    <!-- <div class="product_share">
+        <button (click)="share()">
+            <a id="share" href="" target="_blank" style="text-decoration: none;color: white;">Share</a>
+        </button>
+    </div> -->
+</div>
+
+<div class="allProducts" *ngFor="let product of products">
+    <app-product-item [product]="product">
+    </app-product-item>
+</div>
