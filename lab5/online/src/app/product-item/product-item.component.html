@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="products">
+        <div class="products_title pad">
+            <h3>
+                <a [title]="online_products.name + ' details'">
+                    {{ online_products.name }}
+                </a>
+            </h3>
+        </div>
+        <div class="products_image pad">
+            <a *ngIf="online_products.image" href="{{ online_products.link }}">
+                <img src="{{ online_products.image }}">
+            </a>
+        </div>
+        <div class="products_desc pad">
+            <p *ngIf="online_products.description">
+                <strong>Description:</strong> {{ online_products.description }}
+            </p>
+        </div>
+        <div class="products_rating pad">
+            <p *ngIf="online_products.rating">
+                <strong>Rating:</strong> {{ online_products.rating }}
+            </p>
+        </div>
+        <div class="products_share pad">
+            <a href="https://t.me/share/url?url= {{ online_products.link }}&text=Check this!">
+                <button>Share</button>
+            </a>
+        </div>
+    </div>
+</div>
