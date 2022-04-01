@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    background-color: grey;
+    min-height: 50px;
+}
+
+.container {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     width: 90%;
+     margin: 0 auto;
+     align-items: center;
+}
+
+.nav-title {
+    margin-left: 25px;
+}
