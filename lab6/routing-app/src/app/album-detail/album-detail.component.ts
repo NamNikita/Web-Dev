@@ -25,8 +25,6 @@ export class AlbumDetailComponent implements OnInit {
   }
 
   getAlbum() {
-    // const id:number = Number(this.route.snapshot.paramMap.get('id'));
-    // this.album = ALBUMS.find((x) => x.id === id);
 
     this.route.paramMap.subscribe((params) => {
       const id = Number(params.get('id'));
