@@ -1,0 +1,33 @@
+.nav-list {
+  display: flex;
+  background-color: black;
+  line-height: 40px;
+  align-items: center;
+  min-height: 70px;
+}
+
+.nav-list h2 {
+  color: white;
+  margin-left: 20px;
+}
+
+.nav-list ul {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 35px;
+}
+
+.nav-list ul li{
+  list-style: none;
+}
+
+.nav-list ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list ul li a:hover {
+  color: gold;
+  border-bottom: 2px solid gold;
+}

@@ -1,0 +1,23 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.home-link {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.home-link a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    
+}
